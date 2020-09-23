@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792EDF6F251BD32700631947 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792EDF6E251BD32700631947 /* FruitRowView.swift */; };
 		793A869C251B046A00EE955E /* FructoseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A869B251B046A00EE955E /* FructoseApp.swift */; };
 		793A869E251B046A00EE955E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A869D251B046A00EE955E /* ContentView.swift */; };
 		793A86A0251B046B00EE955E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793A869F251B046B00EE955E /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792EDF6E251BD32700631947 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 		793A8698251B046A00EE955E /* Fructose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fructose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793A869B251B046A00EE955E /* FructoseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructoseApp.swift; sourceTree = "<group>"; };
 		793A869D251B046A00EE955E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				797CF262251B7A110017BAF2 /* FruitCardView.swift */,
 				79B62499251B80A2004D871C /* StartButtonView.swift */,
+				792EDF6E251BD32700631947 /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,7 +154,7 @@
 				};
 			};
 			buildConfigurationList = 793A8693251B046A00EE955E /* Build configuration list for PBXProject "Fructose" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -187,6 +190,7 @@
 			files = (
 				79B624A6251BB2B9004D871C /* FruitData.swift in Sources */,
 				797CF263251B7A110017BAF2 /* FruitCardView.swift in Sources */,
+				792EDF6F251BD32700631947 /* FruitRowView.swift in Sources */,
 				79B6249A251B80A2004D871C /* StartButtonView.swift in Sources */,
 				793A869E251B046A00EE955E /* ContentView.swift in Sources */,
 				79B6249D251BA341004D871C /* OnboardingView.swift in Sources */,
@@ -321,6 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Fructose/Preview Content\"";
+				DEVELOPMENT_TEAM = 8792VM5KKY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fructose/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -342,6 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Fructose/Preview Content\"";
+				DEVELOPMENT_TEAM = 8792VM5KKY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Fructose/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
