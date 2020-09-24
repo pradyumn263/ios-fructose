@@ -14,7 +14,7 @@ struct OnboardingView: View {
     // MARK: - BODY
     var body: some View {
         TabView{
-            ForEach(fruits[0...12]) { item in
+            ForEach(fruits[0...5]) { item in
                 FruitCardView(fruit: item)
             }
         } //: TAB
@@ -27,6 +27,6 @@ struct OnboardingView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView(fruits: fruitsData)
-            .previewDevice("iPhone 11 Pro")
+            
     }
 }
