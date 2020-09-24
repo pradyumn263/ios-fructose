@@ -11,6 +11,7 @@ struct SettingsView: View {
     //MARK: - Properties
     
     @Environment(\.presentationMode) var presentationMode
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     
     //MARK: - Body
     var body: some View {
@@ -36,6 +37,31 @@ struct SettingsView: View {
                         })
                     
                     //MARK: - Section 2
+                    GroupBox(label: SettingsLabelView(labelText: "Customization", labelImage: "paintbrush"), content: {
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("If you wish, you can restart the application by toggling the switch in this box. That wat it starts the onboarding process and you will see the welcome screen again")
+                            .font(.footnote)
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        
+                        Toggle(isOn: $isOnboarding, label: {
+                            if isOnboarding {
+                                Text("Restarted".uppercased())
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .foregroundColor(Color.green)
+                            } else {
+                                Text("Restart".uppercased())
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .foregroundColor(Color.secondary)
+                            }
+                        })
+                        .padding()
+                        .background(Color(UIColor.tertiarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                        )
+                    })
                     
                     //MARK: - Section 3
                     
